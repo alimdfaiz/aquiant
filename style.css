@@ -1,0 +1,267 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color:black;
+
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    display:flex;
+}
+.logo img{
+    padding:5px;
+}
+.branding{
+    padding:5px;
+    color:#FFCA5F;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -0.25px;
+
+}
+.hero-img{
+    margin-top:200px;
+}
+.hero-img >img{
+    padding: 10px;
+    
+}
+
+
+
+.hero-img{
+    display: flex;
+    animation: scroll 10s ease infinite;
+    z-index: 3 !important; 
+    margin-left:-200px;  
+}
+.hero-img img{
+    width: 30%;
+    flex-shrink: 0;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    25% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.explore>h3{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32.5px;
+    color:#FFFFFF;
+    margin-left: 20px;
+}
+
+
+.marquee{
+    z-index: 50;
+    width:80px;
+    height:1000px;
+    background-color: rgb(204, 159, 244);
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position:absolute;
+    top:0px;
+    right:32%;
+}  
+.marquee div{
+    font-size: 35px;
+    font-weight: 600;
+    font-style:normal;
+    font-family:cursive;
+    line-height: 30px;
+   animation: animate 10s ease infinite;
+   padding: 25px;
+   writing-mode: vertical-lr; 
+   text-orientation: sideways-right;
+}
+/* @keyframes animate{
+    100%{
+        transform: translate(0,100%)
+        
+    } */
+/* } */
+@keyframes animate{
+    0% {
+        transform: translateY(50%);
+    }
+    25% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-20%);
+    }
+    75% {
+        transform: translateY(-70%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+.hero-section{
+    display:flex;
+    justify-content: space-between;
+    background-image: url("https://img.freepik.com/free-vector/musical-notes-pattern-black-background_1017-32303.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1714521600&semt=ais");
+}
+.event{
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.event>h1{
+    font-size: 60px;
+    font-weight: 700;
+    color:#FFFFFF;
+}
+.venue{
+    margin-top:15px;
+    margin-left:10px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    color:#FFFFFF;
+}
+.description{
+    margin-top:5px;
+    padding:10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+    color:#FFFFFF;
+}
+.artist{
+    margin-top: 70px;
+}
+.artist>img{
+    margin-top: 10px;
+}
+.artist>h3{
+    margin-left: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32.5px;
+    color:#FFFFFF;
+}
+.foot{
+    display:flex;
+    justify-content: space-between;
+   margin-top: 150px;
+   
+}
+.btn{
+    margin-left: 60px;
+    margin-top: 20px;
+    display:flex;
+    align-items: center;
+    width:320px;
+    height:50px;
+    background-color:#33363a;
+    border-radius: 32px;
+    
+}
+
+.switch1{
+    border-radius: 10px;
+    background-color:#8a8e94;
+    color:white;
+    width:45%;
+    height:100%;
+    border-radius: 32px;
+    border:0px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.switch2{
+    width:54%;
+    height:100%;
+    background: none;
+    border:0px;
+    outline:none;
+    color:white;
+    border-radius: 32px;
+    font-weight: 600;
+    font-size: 1.1em;
+    
+    
+
+}
+.btn2{
+    display:flex;
+    justify-content: space-around;
+     align-items: center;
+
+    padding-inline: 40px;
+}
+.qrimg{
+    margin-inline: 220px;
+}
+.btn2 button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFCA5F;
+}
+
+.explore{
+    background-color: black;
+    z-index:4 !important;
+}
+/* .text{
+    font-family: Lexend;
+font-size: 128px;
+font-weight: 700;
+line-height: 118px;
+text-align: left;
+color:#FFFFFF;
+} */
+/* 
+ For Tablet Screen */
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .marquee {
+        /* margin-right:-220px; */
+        margin-right:3%;
+        height:1200px !important;
+        z-index:3 !important;
+    }
+    .btn{
+        width:1000px !important;
+        
+    }
+    .switch1{
+width:50%;
+    }
+    .btn2 button{
+        margin-left:-130px !important;
+    }
+    .qrimg{
+        
+        margin-right:160px;
+    }
+};
+@media screen and (min-width: 768px) and (max-width: 976px){
+    .marquee{
+        height:1450px !important;
+    }
+}
